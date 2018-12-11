@@ -1,5 +1,7 @@
 package test.marvel.com.marvelcharacters.models
 
-data class MarvelCharacters(val results: List<MarvelCharacter>) {
+import java.io.Serializable
+
+data class MarvelCharacters(val results: List<MarvelCharacter>) : Serializable {
 
 }

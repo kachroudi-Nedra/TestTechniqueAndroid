@@ -5,6 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+
     <android.support.v4.widget.NestedScrollView
             android:id="@+id/scroll_view_main"
             android:layout_width="match_parent"
@@ -16,7 +17,9 @@
                 android:id="@+id/characters_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"/>
+                android:orientation="horizontal"
+                tools:itemCount="3"
+                tools:listitem="@layout/layout_character_item"/>
     </android.support.v4.widget.NestedScrollView>
 
 </android.support.constraint.ConstraintLayout>

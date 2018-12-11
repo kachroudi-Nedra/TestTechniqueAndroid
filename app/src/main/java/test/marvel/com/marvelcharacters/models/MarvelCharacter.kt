@@ -1,5 +1,6 @@
 package test.marvel.com.marvelcharacters.models
 
+import java.io.Serializable
 import java.util.*
 
 data class MarvelCharacter(
@@ -7,7 +8,7 @@ data class MarvelCharacter(
     val name: String,
     val description: String,
     val modified: Date,
-    val thumbnail: CharacterIcon
-) {
+    val thumbnail: MarvelCharacterIcon
+) : Serializable {
 
 }
